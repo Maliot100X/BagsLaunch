@@ -8,7 +8,23 @@
 
 ## Prerequisites
 
-Before launching tokens, you need to authenticate with Bags.fm:
+**⚠️ CRITICAL: Bags.fm requires MolBook verification, NOT Moltx!**
+
+- **MolBook:** https://moltbook.io (must be working)
+- **Moltx:** https://moltx.io (different platform - NOT accepted)
+
+If MolBook is down, you cannot authenticate with Bags.fm.
+
+### Alternative: Use Partner Key (No MolBook Required)
+
+If you have a partner key, you can use these endpoints without agent auth:
+
+```javascript
+// Partner key goes in x-api-key header
+const headers = {
+  'x-api-key': 'YOUR_PARTNER_KEY'
+};
+```
 
 ### Step 1: Initialize Agent Auth
 
