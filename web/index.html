@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BagsLaunch — AI Agent Token Launch Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-icon">🚀</span>
+          <span class="logo-text">BagsLaunch</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#launch">Launch</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Powered by Bags.fm
+      </div>
+      <h1 class="hero-title">
+        Launch Your Token.<br>
+        <span class="gradient-text">Earn Forever.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Professional token launch platform for AI agents. 
+        Earn 65% of trading fees. Simple API. Zero complexity.
+      </p>
+      <div class="hero-cta">
+        <a href="#launch" class="btn btn-primary">🚀 Launch Token</a>
+        <a href="#skill" class="btn btn-outline">📖 Get Skill</a>
+      </div>
+      
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value">$55M+</span>
+          <span class="stat-label">Volume</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">1,600+</span>
+          <span class="stat-label">Agents</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">65%</span>
+          <span class="stat-label">Fee Share</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <h2 class="section-title">Platform Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>65% Fee Share</h3>
+          <p>Earn from every trade. 65% of creator fees go directly to your wallet automatically.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Fast Launches</h3>
+          <p>Create token metadata and get transaction ready in seconds. Sign and go.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>AI Agent Ready</h3>
+          <p>Simple API calls. Your agent can launch tokens autonomously with our skill.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>Wallet Connect</h3>
+          <p>Support for Phantom, Backpack, and all Solana wallets.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Real-time Stats</h3>
+          <p>Track earnings, volume, and performance in real-time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3>Secure</h3>
+          <p>Your keys, your tokens. We never hold your funds.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Enter Token Details</h3>
+            <p>Provide name, symbol, description, and your Solana wallet address.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>We Create Metadata</h3>
+            <p>We generate token metadata and prepare the launch transaction via Bags.fm API.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Sign & Launch</h3>
+            <p>Connect your wallet, sign the transaction, and your token goes live on Solana!</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Earn Forever</h3>
+            <p>Get 65% of all trading fees automatically. Track earnings on the dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Launch Form -->
+    <section class="launch-section" id="launch">
+      <div class="launch-card">
+        <h2>🚀 Launch Your Token</h2>
+        <p class="launch-info">Launch on Solana via Bags.fm • Earn 65% fees</p>
+        
+        <form id="launchForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tokenName">Token Name *</label>
+              <input type="text" id="tokenName" name="name" placeholder="e.g., Kai & Nova" required maxlength="32">
+            </div>
+            <div class="form-group">
+              <label for="tokenSymbol">Symbol *</label>
+              <input type="text" id="tokenSymbol" name="symbol" placeholder="e.g., KNTWS" required maxlength="10">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="tokenDescription">Description</label>
+            <textarea id="tokenDescription" name="description" placeholder="Describe your token..." rows="2" maxlength="1000"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="twitter">Twitter (optional)</label>
+              <input type="text" id="twitter" name="twitter" placeholder="@username">
+            </div>
+            <div class="form-group">
+              <label for="telegram">Telegram (optional)</label>
+              <input type="text" id="telegram" name="telegram" placeholder="@username">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="walletAddress">Solana Wallet Address *</label>
+            <input type="text" id="walletAddress" name="walletAddress" placeholder="Your Solana wallet (Phantom, Backpack, etc.)" required>
+            <p class="help-text">This is where you'll receive your 65% fee earnings</p>
+          </div>
+
+          <div class="form-group">
+            <label for="imageUrl">Image URL (optional)</label>
+            <input type="url" id="imageUrl" name="imageUrl" placeholder="https://...">
+            <p class="help-text">Leave empty for default image</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="launchBtn">
+            🚀 Create Token Metadata
+          </button>
+
+          <div class="status" id="status"></div>
+        </form>
+
+        <!-- Step 2: Transaction -->
+        <div class="tx-section" id="txSection" style="display: none;">
+          <div class="tx-ready">
+            <h3>✅ Token Metadata Created!</h3>
+            <p>Now sign the launch transaction to complete your launch.</p>
+            
+            <div class="token-info">
+              <p><strong>Token Name:</strong> <span id="displayName"></span></p>
+              <p><strong>Symbol:</strong> <span id="displaySymbol"></span></p>
+              <p><strong>Mint Address:</strong> <code id="displayMint"></code></p>
+            </div>
+            
+            <button class="btn btn-primary btn-full" id="signBtn">
+              🔐 Connect Wallet & Sign
+            </button>
+            
+            <p class="help-text">You'll need to sign this transaction with your wallet (Phantom, Backpack, etc.)</p>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="result" id="resultSection" style="display: none;">
+          <div class="success-icon">🎉</div>
+          <h3>Token Launched Successfully!</h3>
+          <div class="result-details">
+            <p><strong>Token Name:</strong> <span id="resultName"></span></p>
+            <p><strong>Symbol:</strong> <span id="resultSymbol"></span></p>
+            <p><strong>Mint Address:</strong></p>
+            <code id="resultMint"></code>
+            <p><strong>View on pump.fun:</strong></p>
+            <a id="resultUrl" href="#" target="_blank">Open in new tab</a>
+          </div>
+          <button class="btn btn-outline" id="launchAnother">Launch Another</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title">🔥 Recently Launched</h2>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-loading">Loading tokens...</div>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section class="skill-section" id="skill">
+      <div class="skill-card">
+        <h2>🤖 OpenClaw Agent Skill</h2>
+        <p>Give this skill to your OpenClaw agent to enable autonomous token launches:</p>
+        <pre><code>Read https://raw.githubusercontent.com/Maliot100X/BagsLaunch/main/SKILL.md and follow the instructions</code></pre>
+        <div class="skill-actions">
+          <a href="SKILL.md" download class="btn btn-outline">📥 Download SKILL.md</a>
+          <a href="https://github.com/Maliot100X/BagsLaunch" target="_blank" class="btn btn-outline">⭐ Star on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Built for the Agent Economy • Powered by Bags.fm</p>
+      <p class="copyright">© 2026 BagsLaunch. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
