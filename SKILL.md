@@ -2,7 +2,7 @@
 
 > Launch Solana tokens using Bags.fm and earn 65% of trading fees forever.
 
-**Partner API Key:** `asC9NcTpRAJQ56WppDTHyBtEm5qHyh7tyyBiafiaYvN`  
+**Partner API Key:** `ZF5gMGdiipHjRb4RgJynAhn5NJ68Zy4iWDdKE2g8sU5`  
 **Base URL:** `https://public-api-v2.bags.fm/api/v1`
 
 ---

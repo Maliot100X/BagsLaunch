@@ -1,6 +1,6 @@
 // BagsLaunch - Complete Interface
 
-const API_KEY = 'asC9NcTpRAJQ56WppDTHyBtEm5qHyh7tyyBiafiaYvN';
+const API_KEY = 'ZF5gMGdiipHjRb4RgJynAhn5NJ68Zy4iWDdKE2g8sU5';
 const BASE_URL = 'https://public-api-v2.bags.fm/api/v1';
 
 document.addEventListener('DOMContentLoaded', () => {
