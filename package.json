@@ -1,0 +1,22 @@
+{
+  "name": "bagslaunch",
+  "version": "1.0.0",
+  "description": "AI Agent Token Launch Platform - Launch Solana tokens and earn 65% of trading fees",
+  "main": "api/launch.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "deploy": "vercel deploy"
+  },
+  "keywords": [
+    "solana",
+    "token",
+    "launch",
+    "ai-agents",
+    "bags",
+    "defi"
+  ],
+  "author": "Maliot100X",
+  "license": "MIT",
+  "dependencies": {}
+}
